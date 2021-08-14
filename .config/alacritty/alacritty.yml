@@ -1,0 +1,70 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 130
+    lines: 30
+
+  title: Alacritty
+  gtk_theme_variant: dark
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  size: 9
+  normal:
+    family: "Fira Code"
+
+draw_bold_text_with_bright_colors: true
+background_opacity: 1.0
+
+save_to_clipboard: true
+
+window.dynamic_title: true
+
+cursor:
+  style: Beam
+
+live_config_reload: true
+
+shell:
+  program: /usr/bin/fish
+  args:
+    - --login
+
+mouse:
+  hide_when_typing: true
+
+colors:
+  primary:
+    background: '0x0a1124'
+    foreground: '0xeec49a'
+  cursor:
+    text:       '0x0a1124'
+    cursor:     '0xeec49a'
+  normal:
+    black:      '0x0a1124'
+    red:        '0x5F4149'
+    green:      '0xEB3247'
+    yellow:     '0xBC4349'
+    blue:       '0xF35645'
+    magenta:    '0xF6A73B'
+    cyan:       '0xFAD32F'
+    white:      '0xeec49a'
+  bright:
+    black:      '0xa6896b'
+    red:        '0x5F4149'
+    green:      '0xEB3247'
+    yellow:     '0xBC4349'
+    blue:       '0xF35645'
+    magenta:    '0xF6A73B'
+    cyan:       '0xFAD32F'
+    white:      '0xeec49a'
