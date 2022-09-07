@@ -1,0 +1,63 @@
+{
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "workbench.sideBar.location": "right",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "git.autofetch": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules",
+        "**/.venv"
+    ],
+    "todo-tree.filtering.ignoreGitSubmodules": true,
+    "gitlens.views.repositories.autoRefresh": false,
+    "todo-tree.tree.autoRefresh": false,
+    "workbench.startupEditor": "none",
+    "cSpell.language": "en-GB",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "git.confirmSync": false,
+    "security.workspace.trust.enabled": false,
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+        "node_modules/*"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "files.associations": {
+        "*.tera": "html",
+        "*.jinja": "html"
+    },
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "workbench.colorTheme": "Solarized Dark",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "update.mode": "none",
+    "jupyter.diagnostics.reservedPythonNames.exclude": [
+        "**/site-packages/**",
+        "**/lib/python/**",
+        "**/lib64/python/**",
+    ],
+    "jupyter.diagnostics.reservedPythonNames.enabled": false,
+}

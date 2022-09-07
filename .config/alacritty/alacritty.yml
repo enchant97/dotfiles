@@ -1,3 +1,7 @@
+#
+# ~/.config/alacritty/alacritty.yml
+#
+
 env:
   TERM: xterm-256color
 
@@ -10,21 +14,16 @@ window:
   gtk_theme_variant: dark
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
   history: 10000
-
-  # Scrolling distance multiplier.
   multiplier: 3
 
-# Font configuration
 font:
   size: 9
   normal:
     family: "Fira Code"
 
 draw_bold_text_with_bright_colors: true
-background_opacity: 1.0
+window.opacity: 1.0
 
 save_to_clipboard: true
 
@@ -43,28 +42,34 @@ shell:
 mouse:
   hide_when_typing: true
 
-colors:
-  primary:
-    background: '0x0a1124'
-    foreground: '0xeec49a'
-  cursor:
-    text:       '0x0a1124'
-    cursor:     '0xeec49a'
-  normal:
-    black:      '0x0a1124'
-    red:        '0x5F4149'
-    green:      '0xEB3247'
-    yellow:     '0xBC4349'
-    blue:       '0xF35645'
-    magenta:    '0xF6A73B'
-    cyan:       '0xFAD32F'
-    white:      '0xeec49a'
-  bright:
-    black:      '0xa6896b'
-    red:        '0x5F4149'
-    green:      '0xEB3247'
-    yellow:     '0xBC4349'
-    blue:       '0xF35645'
-    magenta:    '0xF6A73B'
-    cyan:       '0xFAD32F'
-    white:      '0xeec49a'
+schemes:
+  solarized_dark: &solarized
+    primary:
+        background: '#002b36' # base03
+        foreground: '#839496' # base0
+
+    cursor:
+        text:   '#002b36' # base03
+        cursor: '#839496' # base0
+
+    normal:
+        black:   '#073642' # base02
+        red:     '#dc322f' # red
+        green:   '#859900' # green
+        yellow:  '#b58900' # yellow
+        blue:    '#268bd2' # blue
+        magenta: '#d33682' # magenta
+        cyan:    '#2aa198' # cyan
+        white:   '#eee8d5' # base2
+
+    bright:
+        black:   '#002b36' # base03
+        red:     '#cb4b16' # orange
+        green:   '#586e75' # base01
+        yellow:  '#657b83' # base00
+        blue:    '#839496' # base0
+        magenta: '#6c71c4' # violet
+        cyan:    '#93a1a1' # base1
+        white:   '#fdf6e3' # base3
+
+colors: *solarized
