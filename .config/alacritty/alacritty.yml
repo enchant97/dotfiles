@@ -11,7 +11,9 @@ window:
     lines: 30
 
   title: Alacritty
-  gtk_theme_variant: dark
+  decorations_theme_variant: dark
+  opacity: 1.0
+  dynamic_title: true
 
 scrolling:
   history: 10000
@@ -23,11 +25,8 @@ font:
     family: "Fira Code"
 
 draw_bold_text_with_bright_colors: true
-window.opacity: 1.0
 
 save_to_clipboard: true
-
-window.dynamic_title: true
 
 cursor:
   style: Beam
