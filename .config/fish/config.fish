@@ -23,8 +23,14 @@ abbr -a ll 'exa -l --color=always --group-directories-first --icons'  # long for
 abbr -a lt 'exa -aT --color=always --group-directories-first --icons' # tree listing
 abbr -a tree "exa -T -R -a"                                           # tree output showing all files
 abbr -a l. "exa -a | egrep '^\.'"                                     # show only dotfiles
-abbr -a cat 'bat --style header --style rules --style snip --style changes --style header'
+abbr -a cat 'bat'
+
+# Git aliases for SPEEEEED!
 abbr -a gpa 'git push origin && git push sync'
+abbr -a ga 'git add'
+abbr -a ga. 'git add .'
+abbr -a gc 'git commit'
+
 
 ## PATH additions ##
 fish_add_path ~/.dotnet/tools

@@ -35,5 +35,10 @@ alias ll='exa -l --color=always --group-directories-first --icons'  # long forma
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
 alias tree="exa -T -R -a"                                           # tree output showing all files
-alias cat='bat --style header --style rules --style snip --style changes --style header'
+alias cat='bat'
+
+# Git aliases for SPEEEEED!
 alias gpa='git push origin && git push sync'
+alias ga='git add'
+alias ga.='git add .'
+alias gc='git commit'
