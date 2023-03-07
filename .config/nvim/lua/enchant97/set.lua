@@ -43,3 +43,8 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     pattern = { "*" },
     command = [[%s#\($\n\s*\)\+\%$##e]],
 })
+
+-- spellcheck
+vim.opt.spelllang = 'en'
+vim.opt.spelloptions = "camel"
+vim.opt.spell = true
