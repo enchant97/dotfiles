@@ -28,6 +28,8 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     -- file bookmark menu
     use('ThePrimeagen/harpoon')
+    -- fancy terminal stuff
+    use {"akinsho/toggleterm.nvim", tag = '*'}
     -- fancy undo
     use('mbbill/undotree')
     -- git stuff
@@ -52,6 +54,7 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons' }
     }
+    -- hint when leader, etc is pressed
     use {
         "folke/which-key.nvim",
         config = function()
