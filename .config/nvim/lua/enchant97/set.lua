@@ -11,6 +11,7 @@ vim.opt.smarttab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = true
+vim.opt.linebreak = true
 
 -- disable anoying temp files
 vim.opt.swapfile = false
