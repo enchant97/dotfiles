@@ -18,7 +18,8 @@ return require('packer').startup(function(use)
         as = 'onedark',
         config = function()
             require("onedark").setup({
-                style = 'darker'
+                style = 'warmer',
+                transparent = false,
             })
             vim.cmd('colorscheme onedark')
         end
@@ -31,6 +32,12 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     -- git stuff
     use('tpope/vim-fugitive')
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require('gitsigns').setup()
+        end
+    }
     -- customisable window bar
     use {
         'fgheng/winbar.nvim',
@@ -38,6 +45,20 @@ return require('packer').startup(function(use)
             require('winbar').setup({
                 enabled = true,
             })
+        end
+    }
+    -- customisable footer
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons' }
+    }
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 400
+            require("which-key").setup {
+            }
         end
     }
     -- file tree panel
