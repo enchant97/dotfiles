@@ -6,11 +6,21 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- faster loading speed
     use 'lewis6991/impatient.nvim'
+    -- list of ...
+    use {
+        'folke/trouble.nvim',
+        requires = 'nvim-tree/nvim-web-devicons'
+    }
     -- fuzzy search
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    -- Comment highlighting
+    use {
+        'folke/todo-comments.nvim',
+        requires = 'nvim-lua/plenary.nvim'
     }
     -- edtior theme
     use {
@@ -72,6 +82,15 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+    -- highlighting hex colors
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function ()
+            require('colorizer').setup()
+        end
+    }
+    -- highlighting for indent lines
+    use 'lukas-reineke/indent-blankline.nvim'
     -- lsp
     use {
         'VonHeikemen/lsp-zero.nvim',
