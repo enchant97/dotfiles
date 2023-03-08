@@ -72,4 +72,34 @@ schemes:
         cyan:    '#93a1a1' # base1
         white:   '#fdf6e3' # base3
 
-colors: *solarized
+  # (based on onedark warmer)
+  dark_grey: &dark_grey
+    primary:
+        background: '#232326'
+        foreground: '#a7aab0'
+
+    cursor:
+        text:   '#101012'
+        cursor: '#a7aab0'
+
+    normal:
+        black:   '#101012'
+        red:     '#993d3d'
+        green:   '#608b4e'
+        yellow:  '#99752d'
+        blue:    '#575ee5'
+        magenta: '#79428a'
+        cyan:    '#286666'
+        white:   '#5a5b5e'
+
+    bright:
+        black:   '#2c2d31'
+        red:     '#de5d68'
+        green:   '#8fb573'
+        yellow:  '#dbb671'
+        blue:    '#57a5e5'
+        magenta: '#bb70d2'
+        cyan:    '#51a8b3'
+        white:   '#818387'
+
+colors: *dark_grey
