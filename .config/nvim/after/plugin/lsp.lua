@@ -16,3 +16,7 @@ lsp.ensure_installed({
 })
 
 lsp.setup()
+
+vim.keymap.set("n", "<c-I>", function()
+    vim.cmd("LspZeroFormat")
+end, { silent = true, noremap = true, desc = "Format Current Buffer" })

@@ -28,3 +28,4 @@
 | `<c-a>`        | Add File To Harpoon            | harpoon       |
 | `<leader>q`    | Toggle Harpoon Window          | harpoon       |
 | `<leader>gs`   | Toggle Git Panel               | fugitive      |
+| `<c-I>`        | Format Current Buffer          | lspzero       |
