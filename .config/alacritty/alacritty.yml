@@ -11,7 +11,7 @@ window:
     lines: 30
 
   title: Alacritty
-  decorations_theme_variant: dark
+  decorations_theme_variant: Dark
   opacity: 1.0
   dynamic_title: true
 
