@@ -24,6 +24,7 @@ abbr -a lt 'exa -aT --color=always --group-directories-first --icons' # tree lis
 abbr -a tree "exa -T -R -a"                                           # tree output showing all files
 abbr -a l. "exa -a | egrep '^\.'"                                     # show only dotfiles
 abbr -a cat 'bat'
+abbr -a m 'make'
 
 # Git aliases for SPEEEEED!
 abbr -a gpa 'git push origin && git push sync'

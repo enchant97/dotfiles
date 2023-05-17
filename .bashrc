@@ -36,6 +36,7 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
 alias tree="exa -T -R -a"                                           # tree output showing all files
 alias cat='bat'
+alias m='make'
 
 # Git aliases for SPEEEEED!
 alias gpa='git push origin && git push sync'
