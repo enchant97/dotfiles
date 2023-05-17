@@ -15,10 +15,8 @@ eval "$(starship init bash)"
 eval "$(rbenv init - bash)"
 
 ## Exports ##
-export PATH=~/.emacs.d/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=~/.dotnet/tools:$PATH
-export PATH=~/.emacs.d/bin:$PATH
 export PATH=~/go/bin:$PATH
 export GOPATH=~/go
 
@@ -37,6 +35,9 @@ alias l.="exa -a | egrep '^\.'"                                     # show only 
 alias tree="exa -T -R -a"                                           # tree output showing all files
 alias cat='bat'
 alias m='make'
+# neovim
+alias v='nvim'
+alias v.='nvim .'
 
 # Git aliases for SPEEEEED!
 alias gpa='git push origin && git push sync'

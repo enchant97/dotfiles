@@ -25,6 +25,9 @@ abbr -a tree "exa -T -R -a"                                           # tree out
 abbr -a l. "exa -a | egrep '^\.'"                                     # show only dotfiles
 abbr -a cat 'bat'
 abbr -a m 'make'
+# neovim
+abbr -a v 'nvim'
+abbr -a v. 'nvim .'
 
 # Git aliases for SPEEEEED!
 abbr -a gpa 'git push origin && git push sync'
@@ -34,8 +37,8 @@ abbr -a gc 'git commit'
 
 
 ## PATH additions ##
+fish_add_path ~/.local/bin
 fish_add_path ~/.dotnet/tools
-fish_add_path ~/.emacs.d/bin
 fish_add_path ~/go/bin
 fish_add_path ~/.cargo/bin
 
