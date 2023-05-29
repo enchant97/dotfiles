@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+scripts_base=$(dirname $0)
+
+rsync -a $scripts_base/../.config/ ~/.config

@@ -1,0 +1,9 @@
+ttf-firacode-nerd
+alacritty
+starship
+neovim
+tmux
+fish
+exa
+bat
+btop

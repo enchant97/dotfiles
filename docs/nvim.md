@@ -8,8 +8,8 @@
     2. `:so` then `:PackerSync`
 
 
-## Custom Keybinds
-> Leader = white-space
+## Custom Keys
+> Leader = `<SPACE>`
 
 | Map            | Description                    | Plugin        |
 | :------------- | :----------------------------- | :------------ |

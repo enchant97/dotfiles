@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+scripts_base=$(dirname $0)
+
+sudo pacman -Syu
+sudo pacman -S --needed - < $scripts_base/data/pkglist.txt
+sudo paru -Syu
+sudo paru -S --needed - < $scripts_base/data/pkglist-aur.txt
