@@ -20,7 +20,6 @@
 | `<leader>ff`   | Find Files                     | telescope     |
 | `<leader>ps`   | Find Find Filtered             | telescope     |
 | `<c-f>`        | Find Git Files                 | telescope     |
-| `<c-b>`        | Toggle File Tree Panel         | nvim-tree     |
 | `<c-a>`        | Add File To Harpoon            | harpoon       |
 | `<leader>q`    | Toggle Harpoon Window          | harpoon       |
 | `<leader>gs`   | Toggle Git Panel               | fugitive      |

@@ -76,14 +76,6 @@ return require('packer').startup(function(use)
             }
         end
     }
-    -- file tree panel
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional, for file icons
-        },
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
     -- highlighting hex colors
     use {
         'norcalli/nvim-colorizer.lua',
