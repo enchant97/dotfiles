@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# Install the codium extentions gathed from the "codium --list-extensions" command
-#
-
-cat data/codium-extentions.txt | xargs -L 1 codium --install-extension

@@ -16,10 +16,6 @@
 | `<leader>pv`   | Open netrw                     | -             |
 | `<leader>u`    | Toggle Undo Panel              | undotree      |
 | `<leader>x`    | Toggle Diagnostics Panel       | trouble       |
-| `[number] c-\` | Toggle Terminal                | toggleterm    |
-| `<leader>tf`   | Terminal Floating              | toggleterm    |
-| `<leader>th`   | Terminal Horizontal            | toggleterm    |
-| `<leader>tv`   | Terminal Vertical              | toggleterm    |
 | `<leader>ft`   | Find Comments (TODOs, etc)     | todo-comments |
 | `<leader>ff`   | Find Files                     | telescope     |
 | `<leader>ps`   | Find Find Filtered             | telescope     |

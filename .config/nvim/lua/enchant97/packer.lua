@@ -6,6 +6,10 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- faster loading speed
     use 'lewis6991/impatient.nvim'
+    -- tmux integration
+    use {
+        'christoomey/vim-tmux-navigator',
+    }
     -- list of ...
     use {
         'folke/trouble.nvim',
@@ -38,8 +42,6 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     -- file bookmark menu
     use('ThePrimeagen/harpoon')
-    -- fancy terminal stuff
-    use {"akinsho/toggleterm.nvim", tag = '*'}
     -- fancy undo
     use('mbbill/undotree')
     -- git stuff
